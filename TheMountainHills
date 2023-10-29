@@ -1,0 +1,1609 @@
+
+
+local function LavaFE() 
+    print("The Darkones AntiSpy Has Been Activated")
+    
+    function kick()
+    game.Players.LocalPlayer:Kick("NOPE")
+    end
+    
+    
+    
+    
+    function antispy1()
+    local model = game.CoreGui
+    for i, v in pairs(model:GetDescendants()) do
+    if v:FindFirstChild("ColorBar") then
+    kick()
+    end
+    end
+    end
+    
+    
+    
+    
+    
+    function antispy2()
+    if game.CoreGui:FindFirstChild("SimpleSpy2") then
+    kick()
+    end
+    end
+    
+    
+    
+    function antispy3()
+    if game.Players.LocalPlayer.PlayerGui:FindFirstChild("gui") then
+    kick()
+    end
+    end
+    
+    
+    
+    function antispy4()
+    local model = game.CoreGui
+    for i, v in pairs(model:GetDescendants()) do
+    if v:FindFirstChild("ContextMenus") then
+    kick()
+    end
+    end
+    end
+    
+    
+    
+    
+    function antispy5()
+    if _G.scanRemotes == true then
+    kick()
+    end
+    end
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    while task.wait() do
+    antispy1()
+    antispy2()
+    antispy3()
+    antispy4()
+    antispy5()
+    
+    
+    
+    
+    end
+    end
+    
+    
+    local function LL() 
+        
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Prison Life Admin", "DarkTheme")
+    --main
+    
+    local Main = Window:NewTab("Abilities")
+    local MainSection = Main:NewSection("Abilities")
+
+
+
+
+    MainSection:NewButton("Click Kill(PISTOL IN INVENTORY)", "", function()
+        local plr = game.Players.LocalPlayer
+local mouse = plr:GetMouse()
+local tool = Instance.new("Tool", plr.Backpack)
+tool.Name = "Click Kill"
+tool.CanBeDropped = false
+tool.RequiresHandle = false
+
+tool.Activated:connect(function()
+    local t = mouse.Target
+    local target = nil
+    if t then
+      for i, v in pairs(game.Players:GetPlayers()) do
+        if v.Character and v.Character:FindFirstChild("UpperTorso") or
+        v.Character and v.Character:FindFirstChild("LowerTorso") or 
+        v.Character and v.Character:FindFirstChild("Head") or
+        v.Character and v.Character:FindFirstChild("HumanoidRootPart") then
+        
+            if t:IsDescendantOf(v.Character) then
+                target = v
+                break
+            end
+        end
+      end
+    end
+    if target then --your code down here:
+
+
+
+
+local args = { 
+[1] = {
+[1] = {
+
+["RayObject"] = Ray.new(target.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+["Hit"] = target.Character.Torso
+},
+
+[2] = {
+["RayObject"] = Ray.new(target.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame,
+["Hit"] = target.Character.Torso
+},
+
+[3] = {
+["RayObject"] = Ray.new(target.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+["Hit"] = target.Character.Torso
+},
+
+
+[4] = {
+["RayObject"] = Ray.new(target.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+["Hit"] = target.Character.Torso
+},
+
+[5] = {
+["RayObject"] = Ray.new(target.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+["Hit"] = target.Character.Torso
+}
+},
+[2] = game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("M9")
+}
+game:GetService("ReplicatedStorage").ShootEvent:FireServer(unpack(args))
+
+ 
+                local args = { 
+                [1] = game.Players.LocalPlayer.Backpack:FindFirstChild("M9")
+                }
+                game:GetService("ReplicatedStorage").ReloadEvent:FireServer(unpack(args))
+
+
+
+local args = { 
+[1] = {
+[1] = {
+
+["RayObject"] = Ray.new(target.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+["Hit"] = target.Character.Torso
+},
+
+[2] = {
+["RayObject"] = Ray.new(target.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame,
+["Hit"] = target.Character.Torso
+},
+
+[3] = {
+["RayObject"] = Ray.new(target.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+["Hit"] = target.Character.Torso
+},
+
+
+[4] = {
+["RayObject"] = Ray.new(target.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+["Hit"] = target.Character.Torso
+},
+
+[5] = {
+["RayObject"] = Ray.new(target.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+["Hit"] = target.Character.Torso
+}
+},
+[2] = game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("M9")
+}
+game:GetService("ReplicatedStorage").ShootEvent:FireServer(unpack(args))
+
+
+ 
+                local args = { 
+                [1] = game.Players.LocalPlayer.Backpack:FindFirstChild("M9")
+                }
+                game:GetService("ReplicatedStorage").ReloadEvent:FireServer(unpack(args))
+
+
+end
+end)
+
+
+    end)
+
+
+
+    MainSection:NewButton("Click TP", "", function()
+        
+        local plr = game.Players.LocalPlayer
+        local mouse = plr:GetMouse()
+        local tool = Instance.new("Tool", plr.Backpack)
+        tool.Name = "Click TP"
+        tool.CanBeDropped = false
+        tool.RequiresHandle = false
+        tool.Activated:connect(function()
+    
+    
+    local pt = Instance.new("Part")
+     pt.Parent = plr.Character
+    pt.Anchored = true
+    pt.CanCollide= false
+    pt.Name = "ATP"
+    pt.CFrame = plr.Character.HumanoidRootPart.CFrame
+    
+    local pos = mouse.Hit+Vector3.new(0, 3, 0)
+                pos = Vector3.new(pos.X, pos.Y, pos.Z)
+    game.Players.LocalPlayer.Character.ATP.Position = pos
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.ATP.CFrame
+    game.Players.LocalPlayer.Character.ATP:Destroy()
+    end)
+        
+    end)
+
+
+    
+
+
+    MainSection:NewButton("Click Arrest(CUFFS IN INVENTORY)", "", function()
+        
+
+
+
+
+        local plr = game.Players.LocalPlayer
+        local mouse = plr:GetMouse()
+        local tool = Instance.new("Tool", plr.Backpack)
+        tool.Name = "Click Arrest"
+        tool.CanBeDropped = false
+        tool.RequiresHandle = false
+        
+        tool.Activated:connect(function()
+            local t = mouse.Target
+            local target = nil
+            if t then
+              for i, v in pairs(game.Players:GetPlayers()) do
+                if v.Character and v.Character:FindFirstChild("UpperTorso") or
+                v.Character and v.Character:FindFirstChild("LowerTorso") or 
+                v.Character and v.Character:FindFirstChild("Head") or
+                v.Character and v.Character:FindFirstChild("HumanoidRootPart") then
+                
+                    if t:IsDescendantOf(v.Character) then
+                        target = v
+                        break
+                    end
+                end
+              end
+            end
+            if target then --your code down here:
+        
+        
+        
+        
+        local pt = Instance.new("Part")
+         pt.Parent = plr.Character
+        pt.Anchored = true
+        pt.CanCollide= false
+        pt.Name = "FixedTP"
+        pt.CFrame = plr.Character.HumanoidRootPart.CFrame
+        pt.Transparency = 1
+        
+        
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = target.Character.HumanoidRootPart.CFrame
+        
+        
+        wait(0.1)
+        
+        
+        
+        
+        local args = { 
+        [1] = target.Character.HumanoidRootPart
+        
+        }
+        workspace.Remote.arrest:InvokeServer(unpack(args))
+        wait(0.1)
+        
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.FixedTP.CFrame
+        game.Players.LocalPlayer.Character.FixedTP:Destroy()
+        
+        end
+        end)
+        
+    end)
+
+
+
+    MainSection:NewToggle("Instant Respawn", "", function(state)
+        if state then
+           
+
+
+
+
+local function Crims() 
+
+    _G.InstantR = true
+    while _G.InstantR == true do
+        wait()
+    if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") and
+    game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+    if game.Players.LocalPlayer.TeamColor == BrickColor.new("Really red") then
+    if workspace:FindFirstChild("tppart") then
+    game.Workspace.Name = "Workspace"
+    else
+    local E = Instance.new("Part")
+    E.Anchored = true
+    E.Transparency = 1
+    E.CanCollide = false
+    E.Parent = workspace
+    E.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+    E.Name = "tppart"
+    
+    --if game.Players.LocalPlayer.TeamColor == BrickColor.new("Bright red") then
+    
+    
+    local args = { 
+    [1] = "Bright blue"
+    
+    }
+    workspace.Remote.TeamEvent:FireServer(unpack(args))
+    
+    
+    
+    
+    
+    local name = game.Players.LocalPlayer.Name
+    
+    
+    
+    wait(0.3)
+    game.Workspace:WaitForChild(name)
+    
+    game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-920.528137, 95.327179, 2138.6416, -0.985046506, -1.37030307e-08, 0.172288671, -1.4608899e-08, 1, -3.98990174e-09, -0.172288671, -6.44718678e-09, -0.985046506)
+    
+    
+    
+    wait(0.3)
+    game.Workspace:WaitForChild(name)
+    
+    game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.tppart.CFrame
+    wait(0.1)
+    workspace.tppart:Destroy()
+    
+    
+    
+    end
+    end
+    end
+    end
+    end
+    
+    
+    
+    
+    local function Police() 
+    
+    
+    _G.InstantR2 = true
+    while _G.InstantR2 == true do
+        wait()
+    if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") and
+    game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+    if game.Players.LocalPlayer.TeamColor == BrickColor.new("Bright blue") then
+    
+    if workspace:FindFirstChild("tppart") then
+    game.Workspace.Name = "Workspace"
+    else
+    local E = Instance.new("Part")
+    E.Anchored = true
+    E.Transparency = 1
+    E.CanCollide = false
+    E.Parent = workspace
+    E.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+    E.Name = "tppart"
+    
+    
+    
+    
+    
+    local args = { 
+    [1] = "Bright blue"
+    
+    }
+    workspace.Remote.TeamEvent:FireServer(unpack(args))
+    local name = game.Players.LocalPlayer.Name
+    
+    
+    
+    wait(0.3)
+    game.Workspace:WaitForChild(name)
+    
+    game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+    
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.tppart.CFrame
+    wait(0.1)
+    workspace.tppart:Destroy()
+    
+    
+    
+    end
+    
+    end
+    end
+    end
+    end
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    local function Prisoners() 
+    
+    _G.InstantR3 = true
+    while _G.InstantR3 == true do
+        wait()
+    if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") and
+    game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+    if game.Players.LocalPlayer.TeamColor == BrickColor.new("Bright orange") then
+    if workspace:FindFirstChild("tppart") then
+    game.Workspace.Name = "Workspace"
+    else
+    local E = Instance.new("Part")
+    E.Anchored = true
+    E.Transparency = 1
+    E.CanCollide = false
+    E.Parent = workspace
+    E.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+    E.Name = "tppart"
+    
+    
+    
+    
+    
+    local args = { 
+    [1] = "Bright orange"
+    
+    }
+    workspace.Remote.TeamEvent:FireServer(unpack(args))
+    local name = game.Players.LocalPlayer.Name
+    
+    
+    
+    wait(0.2)
+    game.Workspace:WaitForChild(name)
+    
+    game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+    
+    
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.tppart.CFrame
+    wait(0.1)
+    workspace.tppart:Destroy()
+    
+    
+    
+    end
+    
+    end
+    end
+    end
+    end
+    
+    
+    
+    
+    
+    
+    coroutine.wrap(Crims)()
+    coroutine.wrap(Police)()
+    coroutine.wrap(Prisoners)()
+        else
+            _G.InstantR = false
+            _G.InstantR2 = false
+            _G.InstantR3 = false
+
+        end
+    end)
+
+
+
+
+
+
+
+
+    MainSection:NewSlider("Speed", "Speed", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+        end)
+        
+        
+        MainSection:NewSlider("JumpPower", "JumpPower", 700, 16, function(j) -- 500 (MaxValue) | 0 (MinValue)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = j
+        end)
+        
+        
+        MainSection:NewButton("Sit", "There", function()
+        game.Players.LocalPlayer.Character.Humanoid.Sit = true
+        end)
+
+
+
+        MainSection:NewToggle("Place BEAM(HOLD AK)", "", function(state)
+            if state then
+                local target = game.Players.LocalPlayer
+                local plr = game.Players.LocalPlayer
+                
+                function DELETE()
+                if plr.Character:FindFirstChild("BEAM") then
+                plr.Character.BEAM:Destroy()
+                end
+                end
+                
+                
+                
+                
+                if game.Players.LocalPlayer.Character:FindFirstChild("AK-47") then
+                DELETE()
+                
+                
+                local pt = Instance.new("Part")
+                 pt.Parent = plr.Character
+                pt.Anchored = true
+                pt.CanCollide= false
+                pt.Name = "BEAM"
+                pt.CFrame = CFrame.new(420.300781, 21.4256077, 1283.09155, 1, 0, 0, 0, -4.37113883e-08, -1, 0, 1, -4.37113883e-08)
+                pt.Transparency = 0
+                pt.Size = Vector3.new(0.2, 0.2, 2000)
+                pt.BrickColor = BrickColor.new("New Yeller")
+                pt.Material = Enum.Material.Neon
+                
+                
+                wait(0.1)
+                plr.Character.BEAM.Position = plr.Character.HumanoidRootPart.Position
+                
+                
+                _G.force = true
+                while _G.force == true do
+                    wait()
+                
+                
+                wait(0.00000000000000000000000000000001)
+                
+                local args = { 
+                [1] = { 
+                [1] = {
+                --["RayObject"] = Ray.new(Vector3.new(960.7781982421875, 102.05606842041016, 2443.271728515625), Vector3.new(670.641357421875, -189.044921875, -393.0676574707031)), 
+                ["Distance"] = 2000,
+                ["Width"] = 200,
+                ["Cframe"] = game.Players.LocalPlayer.Character.BEAM.CFrame, 
+                ["Hit"] = workspace.Prison_Cellblock.a_outerwall.Part,
+                
+                }
+                },
+                [2] = game:GetService("Players").LocalPlayer.Character:FindFirstChild("AK-47")
+                }
+                game:GetService("ReplicatedStorage").ShootEvent:FireServer(unpack(args))
+                
+                
+                
+                local args = { 
+                [1] = game.Players.LocalPlayer.Character:FindFirstChild("AK-47")
+                }
+                game:GetService("ReplicatedStorage").ReloadEvent:FireServer(unpack(args))
+                end
+                end
+            else
+                game.Players.LocalPlayer.Character.BEAM:Destroy()
+                _G.force = false
+                while _G.force == true do
+                    wait()
+                end
+                end
+        end)
+
+
+ MainSection:NewButton("Click Taze", "", function()
+
+
+local plr = game.Players.LocalPlayer
+local mouse = plr:GetMouse()
+local tool = Instance.new("Tool", plr.Backpack)
+tool.Name = "Click Tase"
+tool.CanBeDropped = false
+tool.RequiresHandle = false
+
+tool.Activated:connect(function()
+    local t = mouse.Target
+    local target = nil
+    if t then
+      for i, v in pairs(game.Players:GetPlayers()) do
+        if v.Character and v.Character:FindFirstChild("UpperTorso") or
+        v.Character and v.Character:FindFirstChild("LowerTorso") or 
+        v.Character and v.Character:FindFirstChild("Head") or
+        v.Character and v.Character:FindFirstChild("HumanoidRootPart") then
+        
+            if t:IsDescendantOf(v.Character) then
+                target = v
+                break
+            end
+        end
+      end
+    end
+    if target then --your code down here:
+
+   
+   
+   local args = { 
+                [1] = game.Players.LocalPlayer.Backpack:FindFirstChild("Taser")
+                }
+                game:GetService("ReplicatedStorage").ReloadEvent:FireServer(unpack(args))
+
+
+local args = { 
+
+
+             
+
+
+
+[1] = {
+[1] = {
+
+["RayObject"] = Ray.new(target.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+["Hit"] = target.Character.Torso
+}
+},
+
+[2] = game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Taser")
+}
+game:GetService("ReplicatedStorage").ShootEvent:FireServer(unpack(args))
+
+
+ 
+                local args = { 
+                [1] = game.Players.LocalPlayer.Backpack:FindFirstChild("Taser")
+                }
+                game:GetService("ReplicatedStorage").ReloadEvent:FireServer(unpack(args))
+
+end
+end)
+end)
+MainSection:NewButton("Disconnect Server", "", function()
+
+
+
+for i, v in pairs(game.Players:GetDescendants()) do
+if v.Parent == game.Players then
+if v.TeamColor == BrickColor.new("Bright orange") then
+local plr = game.Players.LocalPlayer
+
+_G.KILL1 = true
+while _G.KILL1 == true do
+    wait()
+
+
+
+
+
+
+local args = { 
+[1] = {
+[1] = {
+
+["RayObject"] = Ray.new(v.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+["Hit"] = v.Character.Torso
+},
+
+[2] = {
+["RayObject"] = Ray.new(v.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame,
+["Hit"] = v.Character.Torso
+},
+
+[3] = {
+["RayObject"] = Ray.new(v.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+["Hit"] = v.Character.Torso
+},
+
+
+[4] = {
+["RayObject"] = Ray.new(v.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+["Hit"] = v.Character.Torso
+},
+
+[5] = {
+["RayObject"] = Ray.new(v.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+["Hit"] = v.Character.Torso
+}
+},
+[2] = game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("M9")
+}
+game:GetService("ReplicatedStorage").ShootEvent:FireServer(unpack(args))
+
+ 
+                local args = { 
+                [1] = game.Players.LocalPlayer.Backpack:FindFirstChild("M9")
+                }
+                game:GetService("ReplicatedStorage").ReloadEvent:FireServer(unpack(args))
+
+
+
+
+
+end
+end
+end
+end
+
+end)
+
+        local Weapons = Window:NewTab("Weapons")
+        local WeaponsSection = Weapons:NewSection("Weapons")
+
+
+
+        WeaponsSection:NewButton("ShotGun", "", function()
+            local plr = game.Players.LocalPlayer
+
+
+            local pt = Instance.new("Part")
+             pt.Parent = plr.Character
+            pt.Anchored = true
+            pt.CanCollide= false
+            pt.Name = "FixedTP"
+            pt.CFrame = plr.Character.HumanoidRootPart.CFrame
+            pt.Transparency = 1
+            
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(826.924194, 99.9899826, 2255.68042, 0.895976543, -4.01123827e-08, -0.444101393, 2.48784833e-08, 1, -4.01301286e-08, 0.444101393, 2.49070862e-08, 0.895976543)
+            wait(0.2)
+            local args = { 
+            [1] = workspace.Prison_ITEMS.giver:FindFirstChild("Remington 870").ITEMPICKUP
+            
+            }
+            workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+            
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.FixedTP.CFrame
+            game.Players.LocalPlayer.Character.FixedTP:Destroy()
+
+        end)
+
+
+
+
+
+        
+        WeaponsSection:NewButton("AK", "", function()
+           
+            local plr = game.Players.LocalPlayer
+
+
+            local pt = Instance.new("Part")
+             pt.Parent = plr.Character
+            pt.Anchored = true
+            pt.CanCollide= false
+            pt.Name = "FixedTP"
+            pt.CFrame = plr.Character.HumanoidRootPart.CFrame
+            pt.Transparency = 1
+            
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-934.22345, 94.1287613, 2061.39575, 0.991061687, -6.81351935e-08, 0.133404344, 5.91667089e-08, 1, 7.11921047e-08, -0.133404344, -6.26626715e-08, 0.991061687)
+            wait(0.2)
+            local args = { 
+            [1] = workspace.Prison_ITEMS.giver:FindFirstChild("AK-47").ITEMPICKUP
+            
+            }
+            workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+            
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.FixedTP.CFrame
+            game.Players.LocalPlayer.Character.FixedTP:Destroy()
+        end)
+
+
+
+
+        
+        WeaponsSection:NewButton("Pistol", "", function()
+            local plr = game.Players.LocalPlayer
+
+
+            local pt = Instance.new("Part")
+             pt.Parent = plr.Character
+            pt.Anchored = true
+            pt.CanCollide= false
+            pt.Name = "FixedTP"
+            pt.CFrame = plr.Character.HumanoidRootPart.CFrame
+            pt.Transparency = 1
+            
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(826.924194, 99.9899826, 2255.68042, 0.895976543, -4.01123827e-08, -0.444101393, 2.48784833e-08, 1, -4.01301286e-08, 0.444101393, 2.49070862e-08, 0.895976543)
+            wait(0.2)
+            local args = { 
+            [1] = workspace.Prison_ITEMS.giver:FindFirstChild("M9").ITEMPICKUP
+            
+            }
+            workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+            
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.FixedTP.CFrame
+            game.Players.LocalPlayer.Character.FixedTP:Destroy()
+
+        end)
+
+
+
+
+        
+        WeaponsSection:NewButton("Knife", "", function()
+           
+            local plr = game.Players.LocalPlayer
+
+
+            local pt = Instance.new("Part")
+             pt.Parent = plr.Character
+            pt.Anchored = true
+            pt.CanCollide= false
+            pt.Name = "FixedTP"
+            pt.CFrame = plr.Character.HumanoidRootPart.CFrame
+            pt.Transparency = 1
+            
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Prison_ITEMS.single["Crude Knife"].WorldPivot
+            wait(0.2)
+            local args = { 
+            [1] = workspace.Prison_ITEMS.single:FindFirstChild("Crude Knife").ITEMPICKUP
+            
+            }
+            workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+            
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.FixedTP.CFrame
+            game.Players.LocalPlayer.Character.FixedTP:Destroy()
+        end)
+
+
+
+
+        
+        WeaponsSection:NewButton("Hammer", "", function()
+            local plr = game.Players.LocalPlayer
+
+
+            local pt = Instance.new("Part")
+             pt.Parent = plr.Character
+            pt.Anchored = true
+            pt.CanCollide= false
+            pt.Name = "FixedTP"
+            pt.CFrame = plr.Character.HumanoidRootPart.CFrame
+            pt.Transparency = 1
+            
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(775.177979, 98.1899185, 2526.19531, 0.925128698, 2.41088873e-08, 0.379653633, -8.68592842e-09, 1, -4.23367119e-08, -0.379653633, 3.58692631e-08, 0.925128698)
+            wait(0.2)
+            local args = { 
+            [1] = workspace.Prison_ITEMS.single:FindFirstChild("Hammer").ITEMPICKUP
+            
+            }
+            workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+            
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.FixedTP.CFrame
+            game.Players.LocalPlayer.Character.FixedTP:Destroy()
+
+        end)
+
+
+
+
+
+
+        local Teams = Window:NewTab("Switch Teams")
+        local TeamsSection = Teams:NewSection("Switch Teams")
+
+
+        TeamsSection:NewButton("Police", "", function()
+            local pt = Instance.new("Part")
+            pt.Parent = game.Workspace
+           pt.Anchored = true
+           pt.CanCollide= false
+           pt.Name = "TPPP"
+           pt.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+           pt.Transparency = 1
+           
+           
+           
+           local args = { 
+           [1] = "Bright blue"
+           
+           }
+           workspace.Remote.TeamEvent:FireServer(unpack(args))
+           local name = game.Players.LocalPlayer.Name
+           
+           
+           
+           wait(0.3)
+           game.Workspace:WaitForChild(name)
+           
+           game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.TPPP.CFrame
+           
+           workspace.TPPP:Destroy()
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+
+        end)
+
+
+
+
+        TeamsSection:NewButton("Prisoner", "", function()
+            local pt = Instance.new("Part")
+            pt.Parent = game.Workspace
+           pt.Anchored = true
+           pt.CanCollide= false
+           pt.Name = "TPPP"
+           pt.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+           pt.Transparency = 1
+           
+           
+           
+           local args = { 
+           [1] = "Bright orange"
+           
+           }
+           workspace.Remote.TeamEvent:FireServer(unpack(args))
+           local name = game.Players.LocalPlayer.Name
+           
+           
+           
+           wait(0.2)
+           game.Workspace:WaitForChild(name)
+           
+           game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.TPPP.CFrame
+           
+           workspace.TPPP:Destroy()
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+            
+        end)
+
+
+
+
+        TeamsSection:NewButton("Criminal", "", function()
+            local pt = Instance.new("Part")
+            pt.Parent = game.Workspace
+           pt.Anchored = true
+           pt.CanCollide= false
+           pt.Name = "TPPP"
+           pt.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+           pt.Transparency = 1
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-920.528137, 95.327179, 2138.6416, -0.985046506, -1.37030307e-08, 0.172288671, -1.4608899e-08, 1, -3.98990174e-09, -0.172288671, -6.44718678e-09, -0.985046506)
+           
+           local name = game.Players.LocalPlayer.Name
+           
+           
+           
+           wait(0.3)
+           game.Workspace:WaitForChild(name)
+           
+           game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.TPPP.CFrame
+           
+           workspace.TPPP:Destroy()
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+            
+        end)
+
+
+        local TPs = Window:NewTab("TPs")
+        local TPsSection = TPs:NewSection("TPs")
+
+
+
+
+
+        TPsSection:NewButton("Armory", "", function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(835.636536, 99.9899826, 2265.45435, -0.375054568, -2.12991509e-08, 0.927002728, -5.90412625e-08, 1, -9.11047682e-10, -0.927002728, -5.50731016e-08, -0.375054568)
+
+
+        end)
+
+
+
+
+
+
+
+        TPsSection:NewButton("Break Room", "", function()
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(794.7229, 99.9899826, 2257.19312, 0.267546207, -6.83389914e-08, 0.963545024, 1.39346845e-08, 1, 6.70553177e-08, -0.963545024, -4.51370008e-09, 0.267546207)
+            
+        end)
+
+
+
+
+
+
+
+        TPsSection:NewButton("Cafatieria", "", function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(926.984497, 99.9899368, 2281.63428, 0.757805824, 1.80775412e-08, -0.652480125, 7.08600751e-08, 1, 1.10004457e-07, 0.652480125, -1.29596813e-07, 0.757805824)   
+
+            
+        end)
+
+
+
+
+
+
+
+        TPsSection:NewButton("Cam Room", "", function()
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(790.044983, 99.9899826, 2333.13672, 0.911861658, -4.65206291e-08, 0.410497606, 4.35222667e-08, 1, 1.66489205e-08, -0.410497606, 2.68427414e-09, 0.911861658)
+            
+        end)
+
+
+
+
+
+
+
+        TPsSection:NewButton("Courtyard", "", function()
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(776.597595, 97.9999237, 2464.35986, 0.684174538, 8.72628814e-09, 0.729318321, 3.67054831e-08, 1, -4.63984549e-08, -0.729318321, 5.85146225e-08, 0.684174538)
+            
+        end)
+
+
+
+
+
+
+
+        TPsSection:NewButton("Crim Base", "", function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-961.344238, 103.23307, 2061.44604, 0.00606062822, 7.95532031e-08, -0.999981642, -4.01012166e-08, 1, 7.93116257e-08, 0.999981642, 3.96198025e-08, 0.00606062822)
+
+            
+        end)
+
+
+
+
+
+
+
+        TPsSection:NewButton("Front Office", "", function()
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(705.811951, 99.9899826, 2275.80762, 0.366097331, 4.53271465e-09, 0.930576563, -3.52443479e-08, 1, 8.99458108e-09, -0.930576563, -3.60904551e-08, 0.366097331)
+            
+        end)
+
+
+
+
+
+
+
+        TPsSection:NewButton("Gates Control Room", "", function()
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(505.914825, 102.039917, 2251.20972, -0.554159284, -2.97403808e-08, -0.832410634, -4.06302796e-08, 1, -8.67928929e-09, 0.832410634, 2.90113693e-08, -0.554159284)
+            
+        end)
+
+
+
+
+
+
+
+        TPsSection:NewButton("Hallway", "", function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(982.728149, 99.9899826, 2298.61328, 0.999812782, 1.35939544e-08, -0.0193482693, -1.29649873e-08, 1, 3.26331282e-08, 0.0193482693, -3.23761711e-08, 0.999812782)
+
+            
+        end)
+
+
+
+
+
+
+
+        TPsSection:NewButton("JBlock", "", function()
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(917.05304, 99.9899673, 2449.29858, -0.740709186, 9.39737621e-09, 0.671825826, -2.24445973e-09, 1, -1.64624048e-08, -0.671825826, -1.37017402e-08, -0.740709186)
+            
+        end)
+
+
+
+
+
+
+
+        TPsSection:NewButton("Kitchen", "", function()
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(950.259521, 99.9899368, 2216.15552, -0.397769332, -1.92010035e-08, -0.917485476, 1.04733644e-08, 1, -2.54685109e-08, 0.917485476, -1.97397512e-08, -0.397769332)
+            
+        end)
+
+
+
+
+
+
+
+        TPsSection:NewButton("Outside Prison", "", function()
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(276.030914, 72.5167007, 2217.86328, 0.326223403, 9.84605375e-09, 0.945292711, -4.63654644e-08, 1, 5.58498536e-09, -0.945292711, -4.56508893e-08, 0.326223403)
+            
+        end)
+
+
+
+
+
+
+
+        TPsSection:NewButton("Prison Roof", "", function()
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(725.957886, 123.989983, 2328.57129, 0.795441568, -3.37473804e-09, -0.606030285, 1.23339214e-08, 1, 1.06202211e-08, 0.606030285, -1.59224953e-08, 0.795441568)
+            
+        end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    end
+
+
+   -- coroutine.wrap(LavaFE)()
+    coroutine.wrap(LL)()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local lp = game:FindService("Players").LocalPlayer
+
+local function gplr(String)
+	local Found = {}
+	local strl = String:lower()
+	if strl == "all" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			table.insert(Found,v)
+		end
+	elseif strl == "others" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name ~= lp.Name then
+				table.insert(Found,v)
+			end
+		end 
+	elseif strl == "me" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name == lp.Name then
+				table.insert(Found,v)
+			end
+		end 
+	else
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name:lower():sub(1, #String) == String:lower() then
+				table.insert(Found,v)
+			end
+		end 
+	end
+	return Found 
+end
+
+local function notif(str,dur)
+	game:FindService("StarterGui"):SetCore("SendNotification", {
+		Title = "yeet gui",
+		Text = str,
+		Icon = "rbxassetid://2005276185",
+		Duration = dur or 3
+	})
+end
+
+--// sds
+
+local h = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local Top = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local TextButton1 = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+local TextButton3 = Instance.new("TextButton")
+local TextButton4 = Instance.new("TextButton")
+local TextButton5 = Instance.new("TextButton")
+local TextButton6 = Instance.new("TextButton")
+local TextButton7 = Instance.new("TextButton")
+local TextButton8 = Instance.new("TextButton")
+local TextButton9 = Instance.new("TextButton")
+local TextButton10 = Instance.new("TextButton")
+local TextButton11 = Instance.new("TextButton")
+local TextButton12 = Instance.new("TextButton")
+
+h.Name = "h"
+h.Parent = game:GetService("CoreGui")
+h.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = h
+Main.Active = true
+Main.Draggable = true
+Main.BackgroundColor3 = Color3.fromRGB("Dark stone grey")
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.174545452, 0, 0.459574461, 0)
+Main.Size = UDim2.new(0, 454, 0, 218)
+
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Top.BorderSizePixel = 0
+Top.Size = UDim2.new(0, 454, 0, 44)
+
+Title.Name = "Title"
+Title.Parent = Top
+Title.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0, 0, 0.295454562, 0)
+Title.Size = UDim2.new(0, 454, 0, 30)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Target GUI"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+TextBox.Parent = Main
+TextBox.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0704845786, 0, 0.270642221, 0)
+TextBox.Size = UDim2.new(0, 388, 0, 62)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "Target"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+TextButton1.Parent = Main
+TextButton1.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton1.BorderSizePixel = 0
+TextButton1.Position = UDim2.new(0.000352423, 0, 0.57, 0)
+TextButton1.Size = UDim2.new(0, 100, 0, 30)
+TextButton1.Name = "Text Button 2"
+TextButton1.Font = Enum.Font.SourceSans
+TextButton1.Text = "Kill"
+TextButton1.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton1.TextScaled = true
+TextButton1.TextSize = 14.00
+TextButton1.TextWrapped = true
+
+TextButton1.MouseButton1Click:Connect(function()
+	local Target = gplr(TextBox.Text)
+	if Target[1] then
+		Target = Target[1]
+
+local plr = game.Players.LocalPlayer
+		
+		
+		
+		local args = { 
+		[1] = {
+		[1] = {
+		
+		["RayObject"] = Ray.new(Target.Character.HumanoidRootPart.Position), 
+		["Distance"] = 4.407737731933594,
+		["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+		["Hit"] = Target.Character.Torso
+		},
+		
+		[2] = {
+		["RayObject"] = Ray.new(Target.Character.HumanoidRootPart.Position), 
+		["Distance"] = 4.4216227531433105, 
+		["Cframe"] = plr.Character.HumanoidRootPart.CFrame,
+		["Hit"] = Target.Character.Torso
+		},
+		
+		[3] = {
+		["RayObject"] = Ray.new(Target.Character.HumanoidRootPart.Position), 
+		["Distance"] = 4.300302028656006, 
+		["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+		["Hit"] = Target.Character.Torso
+		},
+		
+		
+		[4] = {
+		["RayObject"] = Ray.new(Target.Character.HumanoidRootPart.Position), 
+		["Distance"] = 4.415074825286865, 
+		["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+		["Hit"] = Target.Character.Torso
+		},
+		
+		[5] = {
+		["RayObject"] = Ray.new(Target.Character.HumanoidRootPart.Position), 
+		["Distance"] = 4.313178062438965,
+		["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+		["Hit"] = Target.Character.Torso
+		}
+		},
+		[2] = game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("M9")
+		}
+		game:GetService("ReplicatedStorage").ShootEvent:FireServer(unpack(args))
+		
+		
+		local args = { 
+		[1] = {
+		[1] = {
+		
+		["RayObject"] = Ray.new(Target.Character.HumanoidRootPart.Position), 
+		["Distance"] = 4.407737731933594,
+		["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+		["Hit"] = Target.Character.Torso
+		},
+		
+		[2] = {
+		["RayObject"] = Ray.new(Target.Character.HumanoidRootPart.Position), 
+		["Distance"] = 4.4216227531433105, 
+		["Cframe"] = plr.Character.HumanoidRootPart.CFrame,
+		["Hit"] = Target.Character.Torso
+		},
+		
+		[3] = {
+		["RayObject"] = Ray.new(Target.Character.HumanoidRootPart.Position), 
+		["Distance"] = 4.300302028656006, 
+		["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+		["Hit"] = Target.Character.Torso
+		},
+		
+		
+		[4] = {
+		["RayObject"] = Ray.new(Target.Character.HumanoidRootPart.Position), 
+		["Distance"] = 4.415074825286865, 
+		["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+		["Hit"] = Target.Character.Torso
+		},
+		
+		[5] = {
+		["RayObject"] = Ray.new(Target.Character.HumanoidRootPart.Position), 
+		["Distance"] = 4.313178062438965,
+		["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+		["Hit"] = Target.Character.Torso
+		}
+		},
+		[2] = game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("M9")
+		}
+		game:GetService("ReplicatedStorage").ShootEvent:FireServer(unpack(args))
+		
+		
+
+
+	--Target.Character
+	end
+end)
+
+TextButton2.Parent = Main
+TextButton2.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton2.BorderSizePixel = 0
+TextButton2.Position = UDim2.new(0.400000006, 0, 0.720000029, 0)
+TextButton2.Size = UDim2.new(0, 100, 0, 30)
+TextButton2.Font = Enum.Font.SourceSans
+TextButton2.Name = "Text Button 3"
+TextButton2.Text = "Taze"
+TextButton2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton2.TextScaled = true
+TextButton2.TextSize = 14.00
+TextButton2.TextWrapped = true
+
+TextButton2.MouseButton1Click:Connect(function()
+	local Target = gplr(TextBox.Text)
+	if Target[1] then
+		Target = Target[1]
+
+-- Script generaf4Andrew7"
+local plr = game.Players.LocalPlayer
+
+local CF = plr.Character.HumanoidRootPart.CFrame
+
+
+
+
+
+
+local args = { 
+	[1] = game.Players.LocalPlayer.Backpack:FindFirstChild("Taser")
+	}
+	game:GetService("ReplicatedStorage").ReloadEvent:FireServer(unpack(args))
+
+
+plr.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame-- + Vector3.new(1,0,0)
+
+wait(0.3)
+local args = { 
+
+
+ 
+
+[1] = {
+[1] = {
+
+["RayObject"] = Ray.new(Target.Character.HumanoidRootPart.Position), 
+["Distance"] = 99.300302028656006, 
+["Cframe"] = plr.Character.HumanoidRootPart.CFrame, 
+["Hit"] = Target.Character.Torso
+}
+},
+
+[2] = game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Taser")
+}
+game:GetService("ReplicatedStorage").ShootEvent:FireServer(unpack(args))
+
+
+
+	local args = { 
+	[1] = game.Players.LocalPlayer.Backpack:FindFirstChild("Taser")
+	}
+	game:GetService("ReplicatedStorage").ReloadEvent:FireServer(unpack(args))
+
+
+
+wait(0.4)
+plr.Character.HumanoidRootPart.CFrame = CF
+end
+end)
+
+TextButton3.Parent = Main
+TextButton3.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton3.BorderSizePixel = 0
+TextButton3.Position = UDim2.new(0.770000041, 0, 0.570000052, 0)
+TextButton3.Size = UDim2.new(0, 100, 0, 30)
+TextButton3.Font = Enum.Font.SourceSans
+TextButton3.Name = "Text Button 3"
+TextButton3.Text = "Arrest"
+TextButton3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton3.TextScaled = true
+TextButton3.TextSize = 14.000
+TextButton3.TextWrapped = true
+
+TextButton3.MouseButton1Click:Connect(function()
+    local Target = gplr(TextBox.Text)
+	if Target[1] then
+		Target = Target[1]
+-- Converted using Mokiros's Model to Script plugin
+-- Converted string size: 113
+local plr = game.Players.LocalPlayer
+
+
+local pt = Instance.new("Part")
+ pt.Parent = plr.Character
+pt.Anchored = true
+pt.CanCollide= false
+pt.Name = "FixedTP"
+pt.CFrame = plr.Character.HumanoidRootPart.CFrame
+pt.Transparency = 1
+
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+
+
+wait(0.1)
+
+
+
+
+local args = { 
+[1] = Target.Character.HumanoidRootPart
+
+}
+workspace.Remote.arrest:InvokeServer(unpack(args))
+wait(0.1)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.FixedTP.CFrame
+game.Players.LocalPlayer.Character.FixedTP:Destroy()
+
+	
+end
+end)
+
+
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
